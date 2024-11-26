@@ -15,4 +15,12 @@ function createGrid(size) {
   }
 }
 
+function deleteGrid() {
+  const grid = document.querySelectorAll(".container div");
+  grid.forEach((element) => {
+    element.remove();
+  });
+}
+
 createGrid(resolution);
+//deleteGrid();
